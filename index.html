@@ -23,9 +23,18 @@
                 </nav>
                 <div class="user-profile">
                     <svg class="avatar" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="40" height="40" rx="20" fill="#2563eb"/>
-                        <circle cx="20" cy="12" r="5" fill="#ffffff"/>
-                        <path d="M 10 22 Q 10 18 20 18 Q 30 18 30 22 L 30 30 Q 30 32 28 32 L 12 32 Q 10 32 10 30 Z" fill="#ffffff"/>
+                        <!-- Fish body -->
+                        <ellipse cx="20" cy="20" rx="14" ry="10" fill="#ffffff"/>
+                        <!-- Fish head -->
+                        <circle cx="8" cy="20" r="6" fill="#ffffff"/>
+                        <!-- Fish eye -->
+                        <circle cx="6" cy="18" r="2" fill="#2563eb"/>
+                        <!-- Fish tail -->
+                        <polygon points="34,20 40,15 40,25" fill="#ffffff"/>
+                        <!-- Fish fin (top) -->
+                        <polygon points="20,10 23,5 26,10" fill="#ffffff"/>
+                        <!-- Fish fin (bottom) -->
+                        <polygon points="20,30 23,35 26,30" fill="#ffffff"/>
                     </svg>
                 </div>
             </div>
@@ -211,16 +220,76 @@
         <!-- Footer -->
         <footer class="footer">
             <div class="footer-content">
-                <p>&copy; 2024 Professional Dashboard. All rights reserved.</p>
+                <p>&copy; 2024 Pro-fish-ional Dashboard. All rights reserved.</p>
                 <div class="footer-tagline">
                     <p>✨ Stay Fishy! 🐟 ✨</p>
-                </div>
-                <div class="footer-links">
-                    <a href="#privacy">Privacy Policy</a>
-                    <a href="#terms">Terms of Service</a>
-                    <a href="#contact">Contact Us</a>
                 </div>
             </div>
         </footer>
     </body>
+
+    <script>
+        const feedButton = document.querySelector('.feed-button');
+        const fishEmojis = ['🐟', '🐠', '🐡', '🦈', '🐙'];
+
+        feedButton.addEventListener('click', function(e) {
+            // Use actual mouse click position
+            const buttonX = e.clientX;
+            const buttonY = e.clientY;
+
+            // Create 15-20 fish emojis
+            const fishCount = Math.floor(Math.random() * 6) + 15;
+            
+            for (let i = 0; i < fishCount; i++) {
+                const fish = document.createElement('div');
+                fish.textContent = fishEmojis[Math.floor(Math.random() * fishEmojis.length)];
+                fish.style.position = 'fixed';
+                fish.style.left = buttonX + 'px';
+                fish.style.top = buttonY + 'px';
+                fish.style.fontSize = Math.random() * 20 + 20 + 'px';
+                fish.style.pointerEvents = 'none';
+                fish.style.zIndex = '9999';
+                fish.style.userSelect = 'none';
+                
+                document.body.appendChild(fish);
+
+                // Random direction and distance
+                const angle = (Math.random() * Math.PI * 2);
+                const distance = Math.random() * 300 + 150;
+                const endX = buttonX + Math.cos(angle) * distance;
+                const endY = buttonY + Math.sin(angle) * distance + 200;
+
+                // Animate the fish
+                let x = buttonX;
+                let y = buttonY;
+                let vx = Math.cos(angle) * (Math.random() * 8 + 4);
+                let vy = Math.sin(angle) * (Math.random() * 8 + 4);
+                let life = 1;
+                const duration = Math.random() * 1000 + 1500;
+                const startTime = Date.now();
+
+                function animate() {
+                    const elapsed = Date.now() - startTime;
+                    life = 1 - (elapsed / duration);
+
+                    if (life <= 0) {
+                        fish.remove();
+                        return;
+                    }
+
+                    x += vx;
+                    y += vy;
+                    vy += 0.3; // gravity
+
+                    fish.style.left = x + 'px';
+                    fish.style.top = y + 'px';
+                    fish.style.opacity = life;
+
+                    requestAnimationFrame(animate);
+                }
+
+                animate();
+            }
+        });
+    </script>
 </html>
