@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Professional Dashboard</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="header-container">
+                <div class="logo">
+                    <h1>Dashboard</h1>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#overview">Overview</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#analytics">Analytics</a></li>
+                        <li><a href="#settings">Settings</a></li>
+                    </ul>
+                </nav>
+                <div class="user-profile">
+                    <svg class="avatar" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="20" fill="#2563eb"/>
+                        <circle cx="20" cy="12" r="5" fill="#ffffff"/>
+                        <path d="M 10 22 Q 10 18 20 18 Q 30 18 30 22 L 30 30 Q 30 32 28 32 L 12 32 Q 10 32 10 30 Z" fill="#ffffff"/>
+                    </svg>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Welcome Section -->
+            <section class="welcome-section">
+                <h2>Welcome back!</h2>
+                <p>Here's an overview of your performance today</p>
+            </section>
+
+            <!-- Metrics Section -->
+            <section id="analytics" class="metrics-section">
+                <h3>Key Metrics</h3>
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <svg class="metric-image" viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="150" fill="#e0f2fe"/>
+                            <ellipse cx="250" cy="75" rx="50" ry="35" fill="#ff6b9d"/>
+                            <circle cx="290" cy="75" r="8" fill="#ffffff"/>
+                            <polygon points="300,60 310,75 300,90" fill="#ff6b9d"/>
+                            <path d="M 200 75 Q 180 65 180 75 Q 180 85 200 75" fill="#ff6b9d" opacity="0.6"/>
+                            <path d="M 190 75 Q 170 70 170 75 Q 170 80 190 75" fill="#ff6b9d" opacity="0.4"/>
+                        </svg>
+                        <div class="metric-header">
+                            <span class="metric-label">Total Users</span>
+                            <span class="metric-icon">👥</span>
+                        </div>
+                        <div class="metric-value">12,458</div>
+                        <div class="metric-change positive">↑ 12.5% from last month</div>
+                    </div>
+                    <div class="metric-card">
+                        <svg class="metric-image" viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="150" fill="#fef3c7"/>
+                            <ellipse cx="250" cy="75" rx="50" ry="35" fill="#fbbf24"/>
+                            <circle cx="290" cy="75" r="8" fill="#ffffff"/>
+                            <polygon points="300,60 310,75 300,90" fill="#fbbf24"/>
+                            <path d="M 200 75 Q 180 65 180 75 Q 180 85 200 75" fill="#fbbf24" opacity="0.6"/>
+                            <path d="M 190 75 Q 170 70 170 75 Q 170 80 190 75" fill="#fbbf24" opacity="0.4"/>
+                        </svg>
+                        <div class="metric-header">
+                            <span class="metric-label">Revenue</span>
+                            <span class="metric-icon">💰</span>
+                        </div>
+                        <div class="metric-value">$48,290</div>
+                        <div class="metric-change positive">↑ 8.2% from last month</div>
+                    </div>
+                    <div class="metric-card">
+                        <svg class="metric-image" viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="150" fill="#dbeafe"/>
+                            <ellipse cx="250" cy="75" rx="50" ry="35" fill="#0ea5e9"/>
+                            <circle cx="290" cy="75" r="8" fill="#ffffff"/>
+                            <polygon points="300,60 310,75 300,90" fill="#0ea5e9"/>
+                            <path d="M 200 75 Q 180 65 180 75 Q 180 85 200 75" fill="#0ea5e9" opacity="0.6"/>
+                            <path d="M 190 75 Q 170 70 170 75 Q 170 80 190 75" fill="#0ea5e9" opacity="0.4"/>
+                        </svg>
+                        <div class="metric-header">
+                            <span class="metric-label">Conversion Rate</span>
+                            <span class="metric-icon">📊</span>
+                        </div>
+                        <div class="metric-value">3.24%</div>
+                        <div class="metric-change negative">↓ 0.5% from last month</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section id="services" class="services-section">
+                <h3>Our Services</h3>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <svg class="service-image" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="250" fill="#e0f2fe"/>
+                            <circle cx="100" cy="50" r="30" fill="#fbbf24"/>
+                            <ellipse cx="250" cy="140" rx="70" ry="50" fill="#ff6b9d"/>
+                            <circle cx="310" cy="140" r="12" fill="#ffffff"/>
+                            <circle cx="315" cy="138" r="6" fill="#000000"/>
+                            <polygon points="320,120 340,140 320,160" fill="#ff6b9d"/>
+                            <path d="M 180 140 Q 150 120 140 140 Q 150 160 180 140" fill="#ff6b9d" opacity="0.5"/>
+                        </svg>
+                        <h4>Web Development</h4>
+                        <p>Build responsive and modern websites tailored to your needs</p>
+                        <a href="#" class="service-link">Learn more →</a>
+                    </div>
+                    <div class="service-card">
+                        <svg class="service-image" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="250" fill="#fef3c7"/>
+                            <circle cx="100" cy="50" r="30" fill="#10b981"/>
+                            <ellipse cx="250" cy="140" rx="70" ry="50" fill="#fbbf24"/>
+                            <circle cx="310" cy="140" r="12" fill="#ffffff"/>
+                            <circle cx="315" cy="138" r="6" fill="#000000"/>
+                            <polygon points="320,120 340,140 320,160" fill="#fbbf24"/>
+                            <path d="M 180 140 Q 150 120 140 140 Q 150 160 180 140" fill="#fbbf24" opacity="0.5"/>
+                        </svg>
+                        <h4>Mobile Apps</h4>
+                        <p>Create native and cross-platform mobile applications</p>
+                        <a href="#" class="service-link">Learn more →</a>
+                    </div>
+                    <div class="service-card">
+                        <svg class="service-image" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="250" fill="#dbeafe"/>
+                            <circle cx="100" cy="50" r="30" fill="#ef4444"/>
+                            <ellipse cx="250" cy="140" rx="70" ry="50" fill="#0ea5e9"/>
+                            <circle cx="310" cy="140" r="12" fill="#ffffff"/>
+                            <circle cx="315" cy="138" r="6" fill="#000000"/>
+                            <polygon points="320,120 340,140 320,160" fill="#0ea5e9"/>
+                            <path d="M 180 140 Q 150 120 140 140 Q 150 160 180 140" fill="#0ea5e9" opacity="0.5"/>
+                        </svg>
+                        <h4>Consulting</h4>
+                        <p>Expert guidance for your digital transformation journey</p>
+                        <a href="#" class="service-link">Learn more →</a>
+                    </div>
+                </div>
+            </section>
+                </div>
+            </section>
+
+            <!-- Fish Gallery Section -->
+            <section class="gallery-section">
+                <h3>Beautiful Fish Showcase</h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <svg class="gallery-image" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="#e0f4f7"/>
+                            <circle cx="80" cy="60" r="25" fill="#fbbf24"/>
+                            <ellipse cx="280" cy="150" rx="80" ry="60" fill="#ff6b9d"/>
+                            <circle cx="360" cy="150" r="15" fill="#ffffff"/>
+                            <circle cx="367" cy="147" r="8" fill="#000000"/>
+                            <polygon points="370,125 395,150 370,175" fill="#ff6b9d"/>
+                            <path d="M 200 150 Q 160 125 145 150 Q 160 175 200 150" fill="#ff6b9d" opacity="0.6"/>
+                            <path d="M 180 150 Q 150 135 140 150 Q 150 165 180 150" fill="#ff6b9d" opacity="0.4"/>
+                        </svg>
+                        <p>Tropical Fish</p>
+                    </div>
+                    <div class="gallery-item">
+                        <svg class="gallery-image" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="#fef3c7"/>
+                            <circle cx="80" cy="60" r="25" fill="#10b981"/>
+                            <ellipse cx="280" cy="150" rx="80" ry="60" fill="#fbbf24"/>
+                            <circle cx="360" cy="150" r="15" fill="#ffffff"/>
+                            <circle cx="367" cy="147" r="8" fill="#000000"/>
+                            <polygon points="370,125 395,150 370,175" fill="#fbbf24"/>
+                            <path d="M 200 150 Q 160 125 145 150 Q 160 175 200 150" fill="#fbbf24" opacity="0.6"/>
+                            <path d="M 180 150 Q 150 135 140 150 Q 150 165 180 150" fill="#fbbf24" opacity="0.4"/>
+                        </svg>
+                        <p>Clownfish</p>
+                    </div>
+                    <div class="gallery-item">
+                        <svg class="gallery-image" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="#dbeafe"/>
+                            <circle cx="80" cy="60" r="25" fill="#ef4444"/>
+                            <ellipse cx="280" cy="150" rx="80" ry="60" fill="#0ea5e9"/>
+                            <circle cx="360" cy="150" r="15" fill="#ffffff"/>
+                            <circle cx="367" cy="147" r="8" fill="#000000"/>
+                            <polygon points="370,125 395,150 370,175" fill="#0ea5e9"/>
+                            <path d="M 200 150 Q 160 125 145 150 Q 160 175 200 150" fill="#0ea5e9" opacity="0.6"/>
+                            <path d="M 180 150 Q 150 135 140 150 Q 150 165 180 150" fill="#0ea5e9" opacity="0.4"/>
+                        </svg>
+                        <p>Blue Fish</p>
+                    </div>
+                    <div class="gallery-item">
+                        <svg class="gallery-image" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="#f3e8ff"/>
+                            <circle cx="80" cy="60" r="25" fill="#06b6d4"/>
+                            <ellipse cx="280" cy="150" rx="80" ry="60" fill="#8b5cf6"/>
+                            <circle cx="360" cy="150" r="15" fill="#ffffff"/>
+                            <circle cx="367" cy="147" r="8" fill="#000000"/>
+                            <polygon points="370,125 395,150 370,175" fill="#8b5cf6"/>
+                            <path d="M 200 150 Q 160 125 145 150 Q 160 175 200 150" fill="#8b5cf6" opacity="0.6"/>
+                            <path d="M 180 150 Q 150 135 140 150 Q 150 165 180 150" fill="#8b5cf6" opacity="0.4"/>
+                        </svg>
+                        <p>Purple Elegance</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2024 Professional Dashboard. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="#contact">Contact Us</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
