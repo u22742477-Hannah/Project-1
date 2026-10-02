@@ -7,6 +7,25 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <svg aria-hidden="true" width="0" height="0" style="position: absolute; overflow: hidden;">
+            <symbol id="profile-fish" viewBox="0 0 40 40">
+                <ellipse cx="20" cy="20" rx="14" ry="10" fill="currentColor"/>
+                <circle cx="8" cy="20" r="6" fill="currentColor"/>
+                <circle cx="6" cy="18" r="2" fill="#2563eb"/>
+                <polygon points="34,20 40,15 40,25" fill="currentColor"/>
+                <polygon points="20,10 23,5 26,10" fill="currentColor"/>
+                <polygon points="20,30 23,35 26,30" fill="currentColor"/>
+            </symbol>
+            <symbol id="profile-fish-large-fins" viewBox="0 0 40 40">
+                <ellipse cx="20" cy="20" rx="14" ry="10" fill="currentColor"/>
+                <circle cx="8" cy="20" r="6" fill="currentColor"/>
+                <circle cx="6" cy="18" r="2" fill="#2563eb"/>
+                <polygon points="32,20 40,10 40,30" fill="currentColor"/>
+                <polygon points="16,12 22,2 29,12" fill="currentColor"/>
+                <polygon points="16,28 22,38 29,28" fill="currentColor"/>
+            </symbol>
+        </svg>
+
         <!-- Header -->
         <header class="header">
             <div class="header-container">
@@ -23,18 +42,7 @@
                 </nav>
                 <div class="user-profile">
                     <svg class="avatar" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Fish body -->
-                        <ellipse cx="20" cy="20" rx="14" ry="10" fill="#ffffff"/>
-                        <!-- Fish head -->
-                        <circle cx="8" cy="20" r="6" fill="#ffffff"/>
-                        <!-- Fish eye -->
-                        <circle cx="6" cy="18" r="2" fill="#2563eb"/>
-                        <!-- Fish tail -->
-                        <polygon points="34,20 40,15 40,25" fill="#ffffff"/>
-                        <!-- Fish fin (top) -->
-                        <polygon points="20,10 23,5 26,10" fill="#ffffff"/>
-                        <!-- Fish fin (bottom) -->
-                        <polygon points="20,30 23,35 26,30" fill="#ffffff"/>
+                        <use href="#profile-fish" width="40" height="40" color="#ffffff"/>
                     </svg>
                 </div>
             </div>
@@ -60,11 +68,7 @@
                     <div class="metric-card">
                         <svg class="metric-image" viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg">
                             <rect width="400" height="150" fill="#e0f2fe"/>
-                            <ellipse cx="250" cy="75" rx="50" ry="35" fill="#ff6b9d"/>
-                            <circle cx="290" cy="75" r="8" fill="#ffffff"/>
-                            <polygon points="300,60 310,75 300,90" fill="#ff6b9d"/>
-                            <path d="M 200 75 Q 180 65 180 75 Q 180 85 200 75" fill="#ff6b9d" opacity="0.6"/>
-                            <path d="M 190 75 Q 170 70 170 75 Q 170 80 190 75" fill="#ff6b9d" opacity="0.4"/>
+                            <use href="#profile-fish" x="150" y="10" width="125" height="125" color="#ff6b9d"/>
                         </svg>
                         <div class="metric-header">
                             <span class="metric-label">Total Fish</span>
@@ -76,11 +80,7 @@
                     <div class="metric-card">
                         <svg class="metric-image" viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg">
                             <rect width="400" height="150" fill="#fef3c7"/>
-                            <ellipse cx="250" cy="75" rx="50" ry="35" fill="#fbbf24"/>
-                            <circle cx="290" cy="75" r="8" fill="#ffffff"/>
-                            <polygon points="300,60 310,75 300,90" fill="#fbbf24"/>
-                            <path d="M 200 75 Q 180 65 180 75 Q 180 85 200 75" fill="#fbbf24" opacity="0.6"/>
-                            <path d="M 190 75 Q 170 70 170 75 Q 170 80 190 75" fill="#fbbf24" opacity="0.4"/>
+                            <use href="#profile-fish" x="225" y="20" width="105" height="105" color="#fbbf24" transform="translate(555 0) scale(-1 1)"/>
                         </svg>
                         <div class="metric-header">
                             <span class="metric-label">Fish Revenue</span>
@@ -92,11 +92,7 @@
                     <div class="metric-card">
                         <svg class="metric-image" viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg">
                             <rect width="400" height="150" fill="#dbeafe"/>
-                            <ellipse cx="250" cy="75" rx="50" ry="35" fill="#0ea5e9"/>
-                            <circle cx="290" cy="75" r="8" fill="#ffffff"/>
-                            <polygon points="300,60 310,75 300,90" fill="#0ea5e9"/>
-                            <path d="M 200 75 Q 180 65 180 75 Q 180 85 200 75" fill="#0ea5e9" opacity="0.6"/>
-                            <path d="M 190 75 Q 170 70 170 75 Q 170 80 190 75" fill="#0ea5e9" opacity="0.4"/>
+                            <use href="#profile-fish-large-fins" x="245" y="0" width="145" height="145" color="#0ea5e9"/>
                         </svg>
                         <div class="metric-header">
                             <span class="metric-label">Fish Catch Rate</span>
@@ -116,11 +112,7 @@
                         <svg class="service-image" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
                             <rect width="400" height="250" fill="#e0f2fe"/>
                             <circle cx="100" cy="50" r="30" fill="#fbbf24"/>
-                            <ellipse cx="250" cy="140" rx="70" ry="50" fill="#ff6b9d"/>
-                            <circle cx="310" cy="140" r="12" fill="#ffffff"/>
-                            <circle cx="315" cy="138" r="6" fill="#000000"/>
-                            <polygon points="320,120 340,140 320,160" fill="#ff6b9d"/>
-                            <path d="M 180 140 Q 150 120 140 140 Q 150 160 180 140" fill="#ff6b9d" opacity="0.5"/>
+                            <use href="#profile-fish" x="175" y="55" width="175" height="175" color="#ff6b9d"/>
                         </svg>
                         <h4>Fish Web Development</h4>
                         <p>Build responsive and modern websites tailored to your needs</p>
@@ -130,11 +122,7 @@
                         <svg class="service-image" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
                             <rect width="400" height="250" fill="#fef3c7"/>
                             <circle cx="100" cy="50" r="30" fill="#10b981"/>
-                            <ellipse cx="250" cy="140" rx="70" ry="50" fill="#fbbf24"/>
-                            <circle cx="310" cy="140" r="12" fill="#ffffff"/>
-                            <circle cx="315" cy="138" r="6" fill="#000000"/>
-                            <polygon points="320,120 340,140 320,160" fill="#fbbf24"/>
-                            <path d="M 180 140 Q 150 120 140 140 Q 150 160 180 140" fill="#fbbf24" opacity="0.5"/>
+                            <use href="#profile-fish-large-fins" x="105" y="45" width="155" height="155" color="#fbbf24" transform="translate(365 0) scale(-1 1)"/>
                         </svg>
                         <h4>Fish Mobile Apps</h4>
                         <p>Create native and cross-platform mobile applications</p>
@@ -144,11 +132,7 @@
                         <svg class="service-image" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
                             <rect width="400" height="250" fill="#dbeafe"/>
                             <circle cx="100" cy="50" r="30" fill="#ef4444"/>
-                            <ellipse cx="250" cy="140" rx="70" ry="50" fill="#0ea5e9"/>
-                            <circle cx="310" cy="140" r="12" fill="#ffffff"/>
-                            <circle cx="315" cy="138" r="6" fill="#000000"/>
-                            <polygon points="320,120 340,140 320,160" fill="#0ea5e9"/>
-                            <path d="M 180 140 Q 150 120 140 140 Q 150 160 180 140" fill="#0ea5e9" opacity="0.5"/>
+                            <use href="#profile-fish" x="235" y="95" width="130" height="130" color="#0ea5e9"/>
                         </svg>
                         <h4>Fish Consulting</h4>
                         <p>Expert guidance for your digital transformation journey</p>
@@ -165,12 +149,7 @@
                         <svg class="gallery-image" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
                             <rect width="400" height="300" fill="#e0f4f7"/>
                             <circle cx="80" cy="60" r="25" fill="#fbbf24"/>
-                            <ellipse cx="280" cy="150" rx="80" ry="60" fill="#ff6b9d"/>
-                            <circle cx="360" cy="150" r="15" fill="#ffffff"/>
-                            <circle cx="367" cy="147" r="8" fill="#000000"/>
-                            <polygon points="370,125 395,150 370,175" fill="#ff6b9d"/>
-                            <path d="M 200 150 Q 160 125 145 150 Q 160 175 200 150" fill="#ff6b9d" opacity="0.6"/>
-                            <path d="M 180 150 Q 150 135 140 150 Q 150 165 180 150" fill="#ff6b9d" opacity="0.4"/>
+                            <use href="#profile-fish-large-fins" x="180" y="75" width="155" height="155" color="#ff6b9d"/>
                         </svg>
                         <p>Tropical Fish</p>
                     </div>
@@ -178,12 +157,7 @@
                         <svg class="gallery-image" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
                             <rect width="400" height="300" fill="#fef3c7"/>
                             <circle cx="80" cy="60" r="25" fill="#10b981"/>
-                            <ellipse cx="280" cy="150" rx="80" ry="60" fill="#fbbf24"/>
-                            <circle cx="360" cy="150" r="15" fill="#ffffff"/>
-                            <circle cx="367" cy="147" r="8" fill="#000000"/>
-                            <polygon points="370,125 395,150 370,175" fill="#fbbf24"/>
-                            <path d="M 200 150 Q 160 125 145 150 Q 160 175 200 150" fill="#fbbf24" opacity="0.6"/>
-                            <path d="M 180 150 Q 150 135 140 150 Q 150 165 180 150" fill="#fbbf24" opacity="0.4"/>
+                            <use href="#profile-fish" x="75" y="60" width="190" height="190" color="#fbbf24" transform="translate(340 0) scale(-1 1)"/>
                         </svg>
                         <p>Clownfish</p>
                     </div>
@@ -191,12 +165,7 @@
                         <svg class="gallery-image" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
                             <rect width="400" height="300" fill="#dbeafe"/>
                             <circle cx="80" cy="60" r="25" fill="#ef4444"/>
-                            <ellipse cx="280" cy="150" rx="80" ry="60" fill="#0ea5e9"/>
-                            <circle cx="360" cy="150" r="15" fill="#ffffff"/>
-                            <circle cx="367" cy="147" r="8" fill="#000000"/>
-                            <polygon points="370,125 395,150 370,175" fill="#0ea5e9"/>
-                            <path d="M 200 150 Q 160 125 145 150 Q 160 175 200 150" fill="#0ea5e9" opacity="0.6"/>
-                            <path d="M 180 150 Q 150 135 140 150 Q 150 165 180 150" fill="#0ea5e9" opacity="0.4"/>
+                            <use href="#profile-fish" x="210" y="35" width="165" height="165" color="#0ea5e9"/>
                         </svg>
                         <p>Blue Fish</p>
                     </div>
@@ -204,12 +173,7 @@
                         <svg class="gallery-image" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
                             <rect width="400" height="300" fill="#f3e8ff"/>
                             <circle cx="80" cy="60" r="25" fill="#06b6d4"/>
-                            <ellipse cx="280" cy="150" rx="80" ry="60" fill="#8b5cf6"/>
-                            <circle cx="360" cy="150" r="15" fill="#ffffff"/>
-                            <circle cx="367" cy="147" r="8" fill="#000000"/>
-                            <polygon points="370,125 395,150 370,175" fill="#8b5cf6"/>
-                            <path d="M 200 150 Q 160 125 145 150 Q 160 175 200 150" fill="#8b5cf6" opacity="0.6"/>
-                            <path d="M 180 150 Q 150 135 140 150 Q 150 165 180 150" fill="#8b5cf6" opacity="0.4"/>
+                            <use href="#profile-fish-large-fins" x="100" y="105" width="170" height="170" color="#8b5cf6" transform="translate(370 0) scale(-1 1)"/>
                         </svg>
                         <p>Purple Elegance</p>
                     </div>
